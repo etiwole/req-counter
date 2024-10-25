@@ -9,8 +9,8 @@ spec:
   - host: etiwole.ru
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
+      - path: /
+        pathType: Exact
         backend:
           service:
             name: req-counter-service
