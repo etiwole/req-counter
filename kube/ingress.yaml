@@ -6,12 +6,12 @@ metadata:
     name: req-counter-ingress
 spec:
   rules:
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: req-counter-service
-            port:
-              number: 80
+    - http:
+        paths:
+        - pathType: Prefix
+          path: /
+          backend:
+            service:
+              name: req-counter-service
+              port:
+                number: 80
