@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: req-counter-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: req-counter
+  template:
+    metadata:
+      labels:
+        app: req-counter
+    spec:
+      containers:
+        - name: req-counter-app
+          image: etiwole/req-counter:latest
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+          ports:
+            - containerPort: 8080
+              protocol: TCP
