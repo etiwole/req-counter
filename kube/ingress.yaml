@@ -12,6 +12,7 @@ spec:
           - pathType: Prefix
             path: "/"
             backend:
-              service: req-counter-service
+              service:
+                name: req-counter-service
               port:
                 number: 80
