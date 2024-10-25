@@ -6,7 +6,6 @@ metadata:
     name: req-counter-ingress
 spec:
   rules:
-  - host: etiwole.ru
     http:
       paths:
       - pathType: Prefix
