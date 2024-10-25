@@ -13,7 +13,7 @@ spec:
         app: req-counter
     spec:
       containers:
-      - name: req-counter
+      - name: req-counter-app
         image: etiwole/req-counter:latest
         resources:
           requests:
