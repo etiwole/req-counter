@@ -4,7 +4,7 @@ metadata:
   name: req-counter-service
 spec:
   selector:
-    app: req-counter
+    app: req-counter-app
   ports:
   - port: 80
     targetPort: 8080
